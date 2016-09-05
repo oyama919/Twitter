@@ -1,0 +1,101 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  position: fixed; top:0;
+}
+header.header{
+  height: 50px;
+}
+.navbar-default {
+    border: 0;
+}
+.navbar {
+    background-color: #fff;
+    color: #1DA1F2;
+}
+  .navbar-brand {
+      background: #fff;
+}
+.fid{
+    position: fixed; top: 50px;
+    background:#fff;
+    width: 100%;
+}
+.fid>h3{
+    margin-left: 40%;
+}
+
+@media (max-width: 767px) {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ccc;
+    text-align: center;
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+  .navbar-default .navbar-toggle {
+    background-color: transparent;
+    &:hover, &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+
+.function {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.about {
+  background-color: white;
+  color: #333;
+  /*padding-top: 20px;*/
+  /*padding-bottom: 40px;*/
+  padding: 80px;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+i{
+  position: absolute; left: 50%;
+  
+}
+i.plef{
+  position: absolute; left: 5%;
+}
+form{
+  position: absolute; 
+  right: 24%;
+  margin-top: 10px;
+
+}
+
+nav{
+  height: 50px;
+}
+.conf input{
+  margin-top: 100px;
+  margin-right: 0px;
+  width: 72px;
+}
+#conf input{
+  margin-top: 100px;
+  margin-right: 10px;
+  width: 72px;
+}
+hr{
+  width: 50%;
+}

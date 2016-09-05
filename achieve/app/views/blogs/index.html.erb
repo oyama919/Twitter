@@ -1,0 +1,14 @@
+<h2><%= notice %></h2>
+<div class="fid">
+<h3><%= link_to "ツイートする", new_blog_path %></h3>
+</div>
+<div class="function">
+<% @blogs.each do |blog| %>
+  <p>Tweet:<%= blog.content %></p><br><br><br><br>
+  <%= link_to "ブログを編集する",edit_blog_path(blog.id) %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= link_to "ブログを削除する",blog_path(blog.id),method: :delete, data: { confirm: '本当に削除してもよろしいですか？' } %><br>
+  <hr>
+<% end %>
+</div>
+
+

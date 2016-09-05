@@ -1,0 +1,21 @@
+<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+<%= form_for(@blog, url: confirm_new_blogs_path) do |f| %>
+<% if @blog.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= @blog.errors.count %>件のエラーがあります。</h2>
+
+    <ul>
+    <% @blog.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<%= f.label :ツイート %>
+<%= f.text_area:content, class: 'form-control' %>
+<br>
+<%= f.submit 'ツイートする', class: 'btn btn-primary btn-block' %>
+<% end %>
+  <%= link_to "ブログ一覧画面にもどる", blogs_path %>
+</div>
+
